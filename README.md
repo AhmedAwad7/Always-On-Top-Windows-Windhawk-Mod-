@@ -1,8 +1,9 @@
 # Always-On-Top-Windows-Windhawk-Mod-
 *Pin/unpin active window with Ctrl+Shift+T (with speech notifications)*
 
+![Screenrecord](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/gif.gif)
 
-<video src="https://github.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/blob/main/Screenrecord/video.mp4" autoplay muted loop />
+
 
 لتفعيل تثبيت\إلغاء التثبيت فوق النوافذ الأخري أستخدم أختصار `Ctrl+Shift+T`
 
