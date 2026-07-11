@@ -24,6 +24,8 @@ Windhawk ولكن لا يكون قديم جداً
 - ويندوز 8 --> يعمل بكفائة
 - ويندوز 8.1 --> يعمل بكفائة
 - ويندوز 10\11 --> لم أجربه (إذا كان يعمل بكفاءة معك فأخبرني في Issues على Github)
+
+  **في إنتظار الموافقة من أحد مطوري Windhawk Mods لإضافة المود في متجر Windhawk**
 ---
 
 
@@ -46,3 +48,5 @@ Windhawk, but not too old
 - Windows 8 --> Works efficiently
 - Windows 8.1 --> Works efficiently
 - Windows 10/11 --> I haven't tried it (if it works well for you, please let me know in Issues on Github)
+  
+  **Waiting for approval from a Windhawk Mods developer to add mod in the Windhawk Store**
