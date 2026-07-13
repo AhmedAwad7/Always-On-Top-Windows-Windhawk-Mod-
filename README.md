@@ -12,7 +12,7 @@ This mod helps you multitask by keeping important windows always visible.
 **Features:**
 - 🔊 Sound notifications to indicate pin/unpin actions.
 - ⚡ Event-driven hotkey using `RegisterHotKey` (no continuous polling).
-- 🧹 Lightweight: runs in a dedicated `explorer.exe` process.
+- 🧹 Lightweight: runs in a dedicated `windhawk.exe` process.
 
 **Requirements:**
 - Windhawk (latest version recommended).
