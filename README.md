@@ -1,52 +1,46 @@
-# Always-On-Top-Windows-Windhawk-Mod-
-*Pin/unpin active window with Ctrl+Shift+T (with speech notifications)*
+<a href="https://github.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/blob/main/README-AR.md" target="_blank">للغة العربية أضغط هنا</a>
+# Always On Top Windows
 
 ![Screenrecord](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/gif.gif)
 
+## English
 
+Press **`Ctrl+Alt+T`** to pin/unpin the active window on top of all other windows.
 
-لتفعيل تثبيت\إلغاء التثبيت فوق النوافذ الأخري أستخدم أختصار `Ctrl+Shift+T`
+This mod helps you multitask by keeping important windows always visible.
 
-من مميزات هذه الإضافة أنها ستساعدك في تعدد المهام
+**Features:**
+- 🔊 Sound notifications to indicate pin/unpin actions.
+- ⚡ Event-driven hotkey using `RegisterHotKey` (no continuous polling).
+- 🧹 Lightweight: runs in a dedicated `explorer.exe` process.
 
-لأن هدف هذا المود هو تثبيت النافذة فوق التطبيقات الأخري
+**Requirements:**
+- Windhawk (latest version recommended).
+- Windows 7 → Works efficiently
+- Windows 8 → Works efficiently
+- Windows 8.1 → Works efficiently
+- Windows 10/11 → Not tested yet (if it works well for you, please let me know in Issues on GitHub)
 
-نرحب بالمساهمين سواء كان لديك اقتراح Issues أو التعديل على الكود Pull requests على Github
-
-يعتمد هذا المود على تقنية Ease of Access Center لنطق إذا كان التثبيت يعمل أم لا 
-
-إذا كان هناك مشكلة في هذه التقنية داخل الويندوز فأحتمال أنه لا يصدر صوت كلام عند الضغط على الأختصار
-
-**متطلبات المود**
-
-Windhawk ولكن لا يكون قديم جداً
-- ويندوز 7 --> يعمل بكفائة
-- ويندوز 8 --> يعمل بكفائة
-- ويندوز 8.1 --> يعمل بكفائة
-- ويندوز 10\11 --> لم أجربه (إذا كان يعمل بكفاءة معك فأخبرني في Issues على Github)
-
-  **في إنتظار الموافقة من أحد مطوري Windhawk Mods لإضافة المود في متجر Windhawk**
+**Contributing:**
+We welcome contributors! Feel free to open Issues or Pull Requests on GitHub.
 ---
+**How to install Mod**
+---
+- **in Windhawk Store**
 
+Waiting for the developer's approval to put the mod in the store...
 
-To enable/disable staying on top of other windows, use the shortcut `Ctrl+Shift+T`
+- **in Github Release**
 
-One of the features of this addition is that it will help you multitask
+1- <a href="https://windhawk.net/" target="_blank">Download And Install Windhawk.exe in here.</a>
 
-Because the goal of this mod is to pin the window on top of other applications
+2- <a href="https://github.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/releases" target="_blank">Download always-on-top.wh.cpp in release.</a>
 
-We welcome contributors, whether you have suggestions (Issues) or code modifications (Pull requests) on Github
+3- Open always-on-top.wh.cpp in notepad and `copy all code`.
 
-This mod relies on the Ease of Access Center technology to announce whether the pin is active or not
+4- Open Windhawk.exe And click `Create a new mod`.
 
-If there is an issue with this technology in Windows, it's possible that no speech will be issued when pressing the shortcut
+5- Past code And click `Compile Mod`.
 
-**Mod Requirements**
+6- Congrats, the code is working for you now.
 
-Windhawk, but not too old
-- Windows 7 --> Works efficiently
-- Windows 8 --> Works efficiently
-- Windows 8.1 --> Works efficiently
-- Windows 10/11 --> I haven't tried it (if it works well for you, please let me know in Issues on Github)
-  
-  **Waiting for approval from a Windhawk Mods developer to add mod in the Windhawk Store**
