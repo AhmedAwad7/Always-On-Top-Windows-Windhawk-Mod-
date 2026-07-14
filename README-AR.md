@@ -27,7 +27,12 @@
 ---
 - **في متجر Windhawk**
 
-في انتظار موافقة المطور لوضع المود في المتجر...
+المود متوفر على تطبيق Windhawk ابحث عنه وستجده
+
+أو يمكنك الضغط هنا
+
+[<img src="https://github.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/blob/main/download%20mod.png?raw=true" width="200" height="80"/>](https://windhawk.net/mods/always-on-top)
+
 
 - **عبر إصدارات GitHub (GitHub Releases)**
 
