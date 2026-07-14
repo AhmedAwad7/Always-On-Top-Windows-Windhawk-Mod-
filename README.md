@@ -28,7 +28,11 @@ We welcome contributors! Feel free to open Issues or Pull Requests on GitHub.
 ---
 - **in Windhawk Store**
 
-Waiting for the developer's approval to put the mod in the store...
+The mod is available on the Windhawk app, just search for it and you'll find it. 
+
+Or you can click here.
+
+[<img src="https://github.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/blob/main/download%20mod.png?raw=true" width="200" height="80"/>](https://windhawk.net/mods/always-on-top)
 
 - **in Github Release**
 
