@@ -1,6 +1,6 @@
 # Always On Top Windows
 
-![Screenrecord](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/gif.gif)
+![Screenrecord](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/Demo.gif)
 
 ## العربية
 
@@ -9,27 +9,33 @@
 هذا المود يساعدك في تعدد المهام عن طريق تثبيت النوافذ المهمة لتظل مرئية دائماً.
 
 **المميزات:**
-- 🔊 إشعارات صوتية لتوضيح التثبيت\إلغاء التثبيت.
+- 🔊 إشعارات صوتية لتوضيح التثبيت\إلغاء التثبيت مع إمكانية تخصيصها أو تعطيلها.
+- 🖥️ نص عائم في أسفل منتصف الشاشة فوق شريط المهام لتوضيح التثبيت\إلغاء التثبيت.
+![Floating Text](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/Floating_text.gif)
 - ⚡ اختصار يعتمد على الأحداث (`RegisterHotKey`) بدون استقصاء مستمر.
 - 🧹 خفيف الوزن: يعمل في عملية مخصصة لـ `windhawk.exe`.
 
 **متطلبات النظام:**
-- Windhawk (يفضل الإصدار الأحدث).
-- ويندوز 7 --> يعمل بكفاءة
-- ويندوز 8 --> يعمل بكفاءة
-- ويندوز 8.1 --> يعمل بكفاءة
-- ويندوز 10\11 --> لم أجربه (إذا كان يعمل بكفاءة معك فأخبرني في Issues على Github)
+- 📀 ويندوز 7 \ 8 \ 8.1 \ 10 \ 11
+- 📊 تطبيق Windhawk ويفضل أحدث إصدار
 
 **المساهمة:**
 نرحب بالمساهمين! يمكنكم فتح Issues أو Pull Requests على GitHub.
 ---
+**طريقة التعامل مع الإعدادات داخل المود**
+---
+- يمكنك إيقاف الاصوات أو إيقاف النص العائم أو تشغيلهما معاً، الأمر يرجع لك:
+![Settings](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/settings.gif)
+- ويمكنك تخصيص صوت التثبيت\إلغاء التثبيت عن طريق وضع اصواتك المفضلة في مجلد وكتابة المسار في المستطيل مثل هذا المثال:
+![Custom Sound](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/custom_sound.png)
+
 **كيفية تثبيت المود**
 ---
 - **في متجر Windhawk**
 
-المود متوفر على تطبيق Windhawk ابحث عنه وستجده
+المود متوفر على تطبيق Windhawk ابحث عن Always on top windows وستجده
 
-أو يمكنك الضغط هنا
+أو يمكنك الضغط على هذا الزر
 
 [<img src="https://github.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/blob/main/download%20mod.png?raw=true" width="200" height="80"/>](https://windhawk.net/mods/always-on-top)
 
