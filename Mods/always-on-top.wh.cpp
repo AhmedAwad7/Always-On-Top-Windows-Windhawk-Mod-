@@ -120,18 +120,21 @@ Contributors are welcome! You can open Issues or Pull Requests on GitHub.
 #define HOTKEY_KEY 'T'
 
 #define NOTIFICATION_TIMER_ID 1001
-#define NOTIFICATION_DISPLAY_DURATION 5000  // 5 ثوانٍ
+#define NOTIFICATION_DISPLAY_DURATION 5000  // 5 sec
 
 // ===== قائمة النوافذ المثبتة =====
+// ===== List of pinned windows =====
 std::vector<HWND> g_trackedWindows;
 CRITICAL_SECTION g_cs;
 HWND g_hwndMod = nullptr;
 HANDLE g_hThread = nullptr;
 
 // ===== نافذة الإشعارات =====
+// ===== Notification window =====
 HWND g_notificationHwnd = nullptr;
 
 // ===== إعدادات الصوت والإشعارات =====
+// ===== Sound and notifications settings =====
 struct Settings {
     bool soundEnabled = true;
     std::wstring soundOn = L"C:\Windows\Media\Speech On.wav";
@@ -140,6 +143,7 @@ struct Settings {
 } g_settings;
 
 // ===== قراءة الإعدادات =====
+// ===== Reading settings =====
 void LoadSettings() {
     g_settings.soundEnabled = Wh_GetIntSetting(L"soundEnabled", 1) != 0;
 
@@ -157,6 +161,7 @@ void LoadSettings() {
 }
 
 // ===== تشغيل صوت من النظام =====
+// ===== Play a sound from the system =====
 void PlaySystemSound(bool isPinned) {
     if (!g_settings.soundEnabled) {
         Wh_Log(L"🔇 Sound disabled");
@@ -199,6 +204,7 @@ void PlaySystemSound(bool isPinned) {
 }
 
 // ===== نافذة الإشعارات العائمة =====
+// ===== Floating notification window =====
 LRESULT CALLBACK NotificationWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
     switch (msg) {
     case WM_PAINT: {
@@ -248,14 +254,16 @@ void ShowNotification(PCWSTR text, bool isPinned) {
     }
 
     // الحصول على مساحة العمل (المنطقة التي لا يشغلها شريط المهام)
+    // Getting the workspace (the area not taken up by the taskbar)
     RECT rcWork;
     SystemParametersInfo(SPI_GETWORKAREA, 0, &rcWork, 0);
 
     const int width = 200;
     const int height = 40;
-    const int marginBottom = 20;  // المسافة من أسفل منطقة العمل
+    const int marginBottom = 20;  // المسافة من أسفل منطقة العمل//The distance from the bottom of the work area
 
     // حساب الموضع: منتصف الشاشة أفقياً، أسفل منطقة العمل عمودياً
+    // Positioning: center of the screen horizontally, below the workspace vertically
     int x = (rcWork.left + rcWork.right - width) / 2;
     int y = rcWork.bottom - height - marginBottom;
 
@@ -291,6 +299,7 @@ void ShowNotification(PCWSTR text, bool isPinned) {
 }
 
 // ===== تبديل التثبيت =====
+// ===== Switch installation =====
 void ToggleTopMost() {
     HWND hWnd = GetForegroundWindow();
     if (!hWnd) return;
@@ -328,6 +337,7 @@ void ToggleTopMost() {
 }
 
 // ===== تنظيف النوافذ المغلقة =====
+// ===== Cleaning closed windows =====
 void CleanupDeadWindows() {
     EnterCriticalSection(&g_cs);
     for (auto it = g_trackedWindows.begin(); it != g_trackedWindows.end(); ) {
@@ -338,6 +348,7 @@ void CleanupDeadWindows() {
 }
 
 // ===== معالج الرسائل =====
+// ===== Message processor =====
 LRESULT CALLBACK ModWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
     switch (msg) {
     case WM_HOTKEY:
@@ -355,6 +366,7 @@ LRESULT CALLBACK ModWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 }
 
 // ===== الخيط الرئيسي =====
+// ===== The main thread =====
 DWORD WINAPI MainThread(LPVOID lpParam) {
     const wchar_t* CLASS_NAME = L"TopMostModClass";
 
@@ -397,6 +409,7 @@ DWORD WINAPI MainThread(LPVOID lpParam) {
 
 // ============================================================
 // ===== دوال المود كأداة (Tool Mod) =====
+// ===== Mod functions as a tool (Tool Mod) =====
 // ============================================================
 
 BOOL WhTool_ModInit() {
@@ -446,7 +459,8 @@ void WhTool_ModUninit() {
 }
 
 // ============================================================
-// ===== كود "Launcher" (مع دعم ويندوز 7) =====
+// ===== كود "Launcher" =====
+// ===== "Launcher" code =====
 // ============================================================
 bool g_isToolModProcessLauncher;
 HANDLE g_toolModProcessMutex;
