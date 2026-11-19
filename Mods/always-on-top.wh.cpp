@@ -1,7 +1,7 @@
 // ==WindhawkMod==
 // @id              always-on-top
 // @name            Always On Top Windows
-// @description     Pin/unpin the active window with Ctrl+Alt+T, with a highlight border, opacity shortcuts and sounds
+// @description     Pin/unpin the active window with Ctrl+Alt+T, with a highlight border, opacity shortcuts and sounds.
 // @version         2.0
 // @author          AhmedAwad7
 // @github          https://github.com/AhmedAwad7
@@ -13,72 +13,7 @@
 // ==WindhawkModReadme==
 /*
 # Always On Top Windows
-
-![Screenrecord](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/Demo.gif)
-
-## English
-
-Press **`Ctrl+Alt+T`** to pin/unpin the active window on top of all other windows.
-
-This mod helps you multitask by pinning important windows so they always remain visible.
-
-**Features:**
-- 🔊 Audio notifications to indicate pinning/unpinning, with the ability to customize or disable them.
-- 🖥️ A floating text displayed at the bottom center of the screen, above the taskbar, to indicate pinning/unpinning.
-![Floating Text](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/Floating_text.gif)
-- 🟦 A highlight border around each pinned window. It follows the window when it moves, resizes or is minimised, and uses your Windows accent color, one color of your choice or a gradient. Corners can be rounded to match the window.
-- 👁️ Opacity shortcuts: `Ctrl+Alt++` and `Ctrl+Alt+-` make a pinned window more or less see-through, in steps.
-- ⌨️ The shortcut can be changed in the settings (Win, Ctrl, Alt, Shift and any key).
-- 🚫 An excluded apps list, and an option to not react while a full-screen game runs.
-- 📌 If Windows drops the always-on-top state, the mod puts it back.
-- 🖱️ An optional "Always on top" entry in the menu you get when you right-click a window's title bar.
-- ⚡ Event-based shortcut (`RegisterHotKey`) with no continuous polling.
-- 🧹 Lightweight: Runs in a dedicated `windhawk.exe` process.
-- ℹ️ Windows of apps that run as administrator cannot be pinned, unless portable Windhawk runs as administrator.
-
-**System Requirements:**
-- 📀 Windows 7 \ 8 \ 8.1 \ 10 \ 11
-- 📊 Windhawk application (latest version preferred)
-
-**Contributing:**
-Contributors are welcome! You can open Issues or Pull Requests on GitHub.
----
-**How to Handle Settings Within the Mod**
----
-- You can turn off sounds, turn off the floating text, or enable both together—it's up to you:
-![Settings](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/settings.gif)
-- You can also customize the pin/unpin sounds by placing your preferred audio files in a folder and entering the path in the text box, as shown in this example:
-![Custom Sound](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/custom_sound.png)
-
----
-
-## العربية
-
-اضغط **`Ctrl+Alt+T`** لتثبيت/إلغاء تثبيت النافذة النشطة فوق جميع النوافذ الأخرى.
-
-هذا المود يساعدك في تعدد المهام عن طريق تثبيت النوافذ المهمة لتظل مرئية دائماً.
-
-**المميزات:**
-- 🔊 إشعارات صوتية لتوضيح التثبيت\إلغاء التثبيت مع إمكانية تخصيصها أو تعطيلها.
-- 🖥️ نص عائم في أسفل منتصف الشاشة فوق شريط المهام لتوضيح التثبيت\إلغاء التثبيت.
-![Floating Text](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/Floating_text.gif)
-- ⚡ اختصار يعتمد على الأحداث (`RegisterHotKey`) بدون استقصاء مستمر.
-- 🧹 خفيف الوزن: يعمل في عملية مخصصة لـ `windhawk.exe`.
-
-**متطلبات النظام:**
-- 📀 ويندوز 7 \ 8 \ 8.1 \ 10 \ 11
-- 📊 تطبيق Windhawk ويفضل أحدث إصدار
-
-**المساهمة:**
-نرحب بالمساهمين! يمكنكم فتح Issues أو Pull Requests على GitHub.
----
-**طريقة التعامل مع الإعدادات داخل المود**
----
-- يمكنك إيقاف الاصوات أو إيقاف النص العائم أو تشغيلهما معاً، الأمر يرجع لك:
-![Settings](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/settings.gif)
-- ويمكنك تخصيص صوت التثبيت\إلغاء التثبيت عن طريق وضع اصواتك المفضلة في مجلد وكتابة المسار في المستطيل مثل هذا المثال:
-![Custom Sound](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/custom_sound.png)
-
+my readme in here
 */
 // ==/WindhawkModReadme==
 
@@ -86,19 +21,29 @@ Contributors are welcome! You can open Issues or Pull Requests on GitHub.
 /*
 - hotkeyWin: false
   $name: Use the Windows key
+  $name:ar-SA: استخدم زر ويندوز
   $description: Part of the pin shortcut. Pick at least one modifier key.
+  $description:ar-SA: جزء من اختصار الدبوس. اختر على الأقل مفتاح تعديل واحد.
 - hotkeyCtrl: true
   $name: Use the Ctrl key
+  $name:ar-SA: استخدم زر Ctrl
   $description: Part of the pin shortcut. Pick at least one modifier key.
+  $description:ar-SA: جزء من اختصار الدبوس. اختر على الأقل مفتاح تعديل واحد.
 - hotkeyAlt: true
   $name: Use the Alt key
+  $name:ar-SA: استخدم زر Alt.
   $description: Part of the pin shortcut. Pick at least one modifier key.
+  $description:ar-SA: جزء من اختصار الدبوس. اختر على الأقل مفتاح تعديل واحد.
 - hotkeyShift: false
   $name: Use the Shift key
+  $name:ar-SA: استخدم زر Shift.
   $description: Part of the pin shortcut. Pick at least one modifier key.
+  $description:ar-SA: جزء من اختصار الدبوس. اختر على الأقل مفتاح تعديل واحد.
 - hotkeyKey: "84"
   $name: Pin shortcut key
+  $name:ar-SA: زر أختصار التثبيت.
   $description: 'The last key of the pin shortcut, together with the modifier keys above. Disabled turns the pin shortcut off (Suggested: T).'
+  $description:ar-SA: 'آخر مفتاح في اختصار التثبيت، مع مفاتيح التعديل أعلاه. Disabled يؤدي إلى إيقاف اختصار الدبوس (المقترح: T).'
   $options:
   - "0": "Disabled"
   - "65": "A"
@@ -177,7 +122,9 @@ Contributors are welcome! You can open Issues or Pull Requests on GitHub.
   - "44": "Print screen"
 - hotkeyOpacityUp: "187"
   $name: More opaque shortcut key
+  $name:ar-SA: أختصار مفتاح تقليل الشفافية
   $description: 'Makes the active pinned window less see-through, in steps, using the same modifier keys as the pin shortcut (Suggested: +).'
+  $description:ar-SA: 'يجعل النافذة المثبتة الحالية أقل شفافية، على مراحل، باستخدام نفس مفاتيح التعديل مثل اختصار التثبيت (المقترح: +).'
   $options:
   - "0": "Disabled"
   - "187": "Plus (+)"
@@ -232,7 +179,9 @@ Contributors are welcome! You can open Issues or Pull Requests on GitHub.
   - "123": "F12"
 - hotkeyOpacityDown: "189"
   $name: More transparent shortcut key
+  $name:ar-SA: اختصار مفتاح زيادة الشفافية
   $description: 'Makes the active pinned window more see-through, in steps, using the same modifier keys as the pin shortcut (Suggested: -).'
+  $description:ar-SA: 'يجعل النافذة المثبتة النشطة أكثر شفافية، على مراحل، باستخدام نفس مفاتيح التعديل الموجودة في اختصار التثبيت (مقترح: -).'
   $options:
   - "0": "Disabled"
   - "187": "Plus (+)"
@@ -287,70 +236,98 @@ Contributors are welcome! You can open Issues or Pull Requests on GitHub.
   - "123": "F12"
 - frameEnabled: true
   $name: Show a border around the pinned window
-  $description: When on, pinned windows get a colored ring so you can see they are pinned.
+  $name:ar-SA: إظهار إطار حول النافذة المثبتة
+  $description: When on, pin windows get a colored frame so you can tell they are pinned.
+  $description:ar-SA: عند التفعيل، تحصل النوافذ المثبتة على إطار ملون حتى تتمكن من معرفة أنها مثبتة.
 - frameColorMode: accent
   $name: Border color
+  $name:ar-SA: لون الإطار
   $description: 'Your Windows accent color, one plain color, or a gradient between the two colors below (Suggested: Windows accent color).'
+  $description:ar-SA: 'Windows accent color و one plain color و gradient between the two colors أدناه (المقترح: Windows accent color).'
   $options:
   - accent: Windows accent color
   - custom: One color
   - gradient: Gradient
 - frameColor: "#F38BA8"
   $name: Border color, start
+  $name:ar-SA: لون الإطار، البداية
   $description: 'Top-left color of the gradient, or the only color when the border color is set to One color. A hex color (Suggested: #F38BA8, Catppuccin Mocha red).'
+  $description:ar-SA: 'اللون العلوي الأيسر للتدرج، أو اللون الوحيد عندما يكون لون الحافة مضبوطا على لون واحد. لون سداسي (مقترح: #F38BA8، كاتبوتشين موكا أحمر).'
 - frameColorTo: "#F9E2AF"
   $name: Border color, end
+  $name:ar-SA: لون الإطار، النهاية
   $description: 'Bottom-right color of the gradient (Suggested: #F9E2AF, Catppuccin Mocha yellow).'
+  $description:ar-SA: 'لون أسفل يمين التدرج (مقترح: #F9E2AF، كاتبوتشين موكا أصفر).'
 - frameOpacity: 100
   $name: Border opacity
+  $name:ar-SA: شفافية الإطار
   $description: 'How solid the border looks. 0 to 100 (Suggested: 100).'
+  $description:ar-SA: 'كم يبدو الإطار ظاهراً. من 0 إلى 100 (مقترح: 100).'
 - frameThickness: 4
   $name: Border thickness
+  $name:ar-SA: سمك الإطار
   $description: 'Thickness of the border in pixels. 1 to 20 (Suggested: 4).'
+  $description:ar-SA: 'سمك الإطار بالبكسل. من 1 إلى 20 (مقترح: 4).'
 - frameRoundCorners: true
   $name: Enable rounded corners
+  $name:ar-SA: تمكين الزوايا المستديرة
   $description: When on, the border rounds its corners to match the pinned window.
+  $description:ar-SA: عند تشغيله، زوايا الإطار تدور لتتناسب مع النافذة المثبتة.
 - frameCornerRadius: 0
   $name: Border corner radius
+  $name:ar-SA: نصف قطر زاوية الحدود
   $description: 'Corner radius of the border in pixels. 0 uses the Windows default, 8 for normal windows and 4 for small ones. Set it to match a corner mod (Suggested: 0).'
+  $description:ar-SA: 'نصف قطر زاوية الحدود بالبكسل. 0 يستخدم الإطار الافتراضي لويندوز، 8 للنوافذ العادية و4 للنوافذ الصغيرة. ضبطه ليطابق تعديل زاوية (مقترح: 0).'
 - soundEnabled: true
   $name: Play a sound when pinning a window
-  $name:ar-SA: تفعيل الصوت
+  $name:ar-SA: تفعيل الصوت عند تثبيت النافذة
   $description: Plays the sounds below when you pin or unpin a window, and when you change opacity.
-  $description:ar-SA: تفعيل أو تعطيل إشعارات الصوت
+  $description:ar-SA: يشغل الأصوات أدناه عند تثبيت أو إلغاء تثبيت نافذة، وعند تغيير شفافيتها.
 - soundOn: C:\Windows\Media\Speech On.wav
   $name: Sound for pin
-  $name:ar-SA: صوت للتثبيت
+  $name:ar-SA: صوت التثبيت
   $description: A .wav file. If the file is missing, a system sound plays instead.
   $description:ar-SA: عند اختيار صوت مخصص لوضع التثبيت، يجب أن يكون صيغة الملف الصوتي .wav
 - soundOff: C:\Windows\Media\Speech Off.wav
   $name: Sound for unpin
-  $name:ar-SA: صوت لإلغاء التثبيت
+  $name:ar-SA: صوت إلغاء التثبيت
   $description: A .wav file. If the file is missing, a system sound plays instead.
   $description:ar-SA: عند اختيار صوت مخصص لوضع إلغاء التثبيت، يجب أن يكون صيغة الملف الصوتي .wav
 - soundOpacityUp: C:\Windows\Media\Windows Hardware Insert.wav
   $name: Sound for more opaque
+  $name:ar-SA: صوت تقليل الشفافية
   $description: A .wav file. If the file is missing, a system sound plays instead.
+  $description:ar-SA: عند اختيار صوت مخصص لوضع إلغاء التثبيت، يجب أن يكون صيغة الملف الصوتي .wav
 - soundOpacityDown: C:\Windows\Media\Windows Hardware Remove.wav
   $name: Sound for more transparent
+  $name:ar-SA: صوت زيادة الشفافية
   $description: A .wav file. If the file is missing, a system sound plays instead.
+  $description:ar-SA: عند اختيار صوت مخصص لوضع إلغاء التثبيت، يجب أن يكون صيغة الملف الصوتي .wav
 - notificationsEnabled: true
   $name: Show the status card
-  $name:ar-SA: تفعيل الإشعارات
+  $name:ar-SA: عرض بطاقة الحالة
   $description: A small card at the bottom of the screen says Pinned or Unpinned.
-  $description:ar-SA: إظهار إشعارات نصية عائمة
+  $description:ar-SA: بطاقة صغيرة في أسفل الشاشة تقول مثبتة أو غير مثبتة.
 - notificationDuration: 5000
   $name: Status card display time
+  $name:ar-SA: وقت عرض بطاقة الحالة
   $description: 'How long the status card stays on screen, in milliseconds. 500 to 10000 (Suggested: 5000).'
+  $description:ar-SA: 'كم من الوقت تبقى بطاقة الحالة على الشاشة، بالميلي ثانية. من 500 إلى 10000 (مقترح: 5000).'
 - gameModeBlock: true
   $name: Do not activate when Game Mode is on
+  $name:ar-SA: لا تفعل عندما يكون وضع اللعبة مفعلا
   $description: Stops the pin shortcut from working while a full-screen game is running.
+  $description:ar-SA: يمنع اختصار التثبيت من العمل أثناء تشغيل لعبة في ملء الشاشة.
 - excludedApps: ""
   $name: Excluded apps
+  $name:ar-SA: التطبيقات المستبعدة 
   $description: Apps that can never be pinned, separated by semicolons, for example Notepad.exe;Calc.exe. A partial name matches too, so Notepad blocks Notepad.exe and Notepad++.exe.
-- showInSystemMenu: false
+  $description:ar-SA: التطبيقات التي لا يمكن تثبيتها أبدا، مفصولة بفواصل منقوطة، مثل Notepad.exe; Calc.exe. يتطابق الاسم الجزئي أيضا، لذا يقوم المفكرة بحظر Notepad.exe و Notepad++.exe.
+- showInSystemMenu: true
   $name: Show Always on Top in the title bar context menu
+  $name:ar-SA: إظهار Always on top في قائمة السياق بشريط العنوان 
   $description: Adds an Always on Top entry to the menu you get when you right-click a window title bar.
+  $description:ar-SA: يضيف إدخال "Always on top إلى القائمة" التي تحصل عليها عند النقر بزر الماوس الأيمن على شريط عنوان النافذة. 
 */
 // ==/WindhawkModSettings==
 
@@ -2448,6 +2425,13 @@ static void ProcessCommandImpl(HWND wnd) {
         ShowNotification(L"Unpinned", kCardIconUnpin);
         Wh_Log(L"[aot-plus] unpinned %p", wnd);
     } else {
+        // don't pin maximized windows
+        if (IsZoomed(wnd)) {
+            ShowNotification(L"Cannot pin a maximized window");
+            Wh_Log(L"[aot-plus] %p is maximized, skipped", wnd);
+            return;
+        }
+
         if (IsExcludedWindow(wnd)) {
             Wh_Log(L"[aot-plus] window is excluded, skipped");
             return;
