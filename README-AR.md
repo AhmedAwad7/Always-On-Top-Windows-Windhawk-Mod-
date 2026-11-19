@@ -1,55 +1,42 @@
 # Always On Top Windows
 
-![Screenrecord](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/Demo.gif)
+![عرض توضيحي](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/Demo.gif)
 
-## العربية
+## اللغات: العربية - [English](https://github.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/blob/main/README.md)
 
-اضغط **`Ctrl+Alt+T`** لتثبيت/إلغاء تثبيت النافذة النشطة فوق جميع النوافذ الأخرى.
+اضغط على **`Ctrl+Alt+T`** (افتراضيًا) لتثبيت/إلغاء تثبيت النافذة النشطة فوق جميع النوافذ الأخرى.
 
-هذا المود يساعدك في تعدد المهام عن طريق تثبيت النوافذ المهمة لتظل مرئية دائماً.
+تساعدك هذه الإضافة على إنجاز مهام متعددة من خلال تثبيت النوافذ المهمة بحيث تبقى مرئية دائمًا.
 
-**المميزات:**
-- 🔊 إشعارات صوتية لتوضيح التثبيت\إلغاء التثبيت مع إمكانية تخصيصها أو تعطيلها.
-- 🖥️ نص عائم في أسفل منتصف الشاشة فوق شريط المهام لتوضيح التثبيت\إلغاء التثبيت.
-![Floating Text](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/Floating_text.gif)
-- ⚡ اختصار يعتمد على الأحداث (`RegisterHotKey`) بدون استقصاء مستمر.
-- 🧹 خفيف الوزن: يعمل في عملية مخصصة لـ `windhawk.exe`.
+**الميزات:**
+- 🔊 تنبيهات صوتية للإشارة إلى التثبيت/إلغاء التثبيت، مع إمكانية تخصيصها أو تعطيلها.
+- 🖥️ نص عائم يظهر في أسفل منتصف الشاشة، أعلى شريط المهام، للإشارة إلى تثبيت/إلغاء تثبيت النافذة.
+- 🟦 إطار مميز حول كل نافذة مثبتة. يتبع هذا الإطار النافذة عند تحريكها أو تغيير حجمها أو تصغيرها، ويستخدم لون تمييز ويندوز الخاص بك، أو لونًا من اختيارك، أو تدرجًا لونيًا. يمكن تقريب الزوايا لتتناسب مع النافذة.
+![windowDemo](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/window.jpg)
+
+- 👁️ اختصارات الشفافية: `Ctrl+Alt+(+)` و`Ctrl+Alt+(-)` تجعل النافذة المثبتة أكثر أو أقل شفافية، بخطوات متدرجة.
+- ⌨️ يمكن تغيير الاختصار من الإعدادات (Win، Ctrl، Alt، Shift، وأي مفتاح آخر).
+- 🚫 قائمة التطبيقات المستثناة، وخيار عدم الاستجابة أثناء تشغيل لعبة بملء الشاشة.
+- 📌 إذا ألغى نظام ويندوز خاصية "دائمًا في المقدمة"، يعيدها التعديل.
+- 🖱️ خيار "دائمًا في المقدمة" في القائمة التي تظهر عند النقر بزر الفأرة الأيمن على شريط عنوان النافذة.
+![Screenrecord](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/Pin-with-mouse.gif)
+
+- ⚙️ إمكانية تخصيص ما تريد من خلال قائمة إعدادات شاملة.
+![Settings](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/Settings.gif)
+- ⚡ اختصار قائم على الأحداث (`RegisterHotKey`) بدون استطلاع مستمر.
+
+- 🧹 خفيف الوزن: يعمل في عملية `windhawk.exe` مخصصة.
+
+- ℹ️ لا يمكن تثبيت نوافذ التطبيقات التي تعمل كمسؤول، إلا إذا كان برنامج Windhawk المحمول يعمل كمسؤول.
+
 
 **متطلبات النظام:**
-- 📀 ويندوز 7 \ 8 \ 8.1 \ 10 \ 11
-- 📊 تطبيق Windhawk ويفضل أحدث إصدار
 
-**المساهمة:**
-نرحب بالمساهمين! يمكنكم فتح Issues أو Pull Requests على GitHub.
----
-**طريقة التعامل مع الإعدادات داخل المود**
----
-- يمكنك إيقاف الاصوات أو إيقاف النص العائم أو تشغيلهما معاً، الأمر يرجع لك:
-![Settings](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/settings.gif)
-- ويمكنك تخصيص صوت التثبيت\إلغاء التثبيت عن طريق وضع اصواتك المفضلة في مجلد وكتابة المسار في المستطيل مثل هذا المثال:
-![Custom Sound](https://raw.githubusercontent.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/main/Screenrecord/custom_sound.png)
+- 📀 ويندوز 8 / 8.1 / 10 / 11
 
-**كيفية تثبيت المود**
----
-- **في متجر Windhawk**
+- 📊 تطبيق Windhawk (يُفضل أحدث إصدار)
 
-المود متوفر على تطبيق Windhawk ابحث عن Always on top windows وستجده
-
-أو يمكنك الضغط على هذا الزر
-
-[<img src="https://github.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/blob/main/download%20mod.png?raw=true" width="200" height="80"/>](https://windhawk.net/mods/always-on-top)
-
-
-- **عبر إصدارات GitHub (GitHub Releases)**
-
-1- <a href="https://windhawk.net/" target="_blank">قم بتحميل وتثبيت Windhawk.exe من هنا.</a>
-
-2- <a href="https://github.com/AhmedAwad7/Always-On-Top-Windows-Windhawk-Mod-/releases" target="_blank">قم بتحميل ملف always-on-top.wh.cpp من قسم Release.</a>
-
-3- افتح ملف always-on-top.wh.cpp باستخدام المفكرة (Notepad) `وانسخ كل الكود`.
-
-4- افتح برنامج Windhawk.exe وانقر على `"إنشاء مود جديد" (Create a new mod)`.
-
-5- الصق الكود وانقر على "ترجمة المود" `(Compile Mod)`.
-
-6- مبروك! المود يعمل الآن على جهازك.
+## المساهمة:
+- نرحب بالمساهمين! يمكنك فتح issues أو pull request على GitHub. ---
+## التحميل:
+- [يمكنك تحميل المود من موقع Windhawk mods هنا.](https://windhawk.net/mods/always-on-top) 
